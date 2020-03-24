@@ -1,0 +1,240 @@
+@media (min-width: 1190px) {
+  h1 {
+    font-size: 2.8rem !important; }
+
+  h2 {
+    font-size: 2rem !important; }
+
+  header div {
+    max-width: 119rem;
+    margin: 0 auto; }
+    header div .header__title p {
+      font-size: 1.4rem;
+      letter-spacing: .1em; }
+    header div .header__form--pink-pc {
+      width: 32rem;
+      height: 4.4rem;
+      line-height: 4.3rem; }
+      header div .header__form--pink-pc a p {
+        font-size: 1.4rem;
+        letter-spacing: .1em; }
+
+  .mainsc .mainsc__paragraph {
+    padding-top: 8.5rem; }
+    .mainsc .mainsc__paragraph h2 {
+      font-weight: bold;
+      line-height: 1.2; }
+
+  .mainsc__desc {
+    padding: 3rem 8rem 4rem; }
+    .mainsc__desc p {
+      letter-spacing: .2em;
+      font-size: 1.7rem;
+      font-weight: bold;
+      padding: .4rem; }
+    .mainsc__desc a div {
+      margin: 5rem auto 7rem;
+      padding: 2rem;
+      height: 10.5rem; }
+      .mainsc__desc a div h1 {
+        font-size: 2.8rem !important;
+        letter-spacing: .1em; }
+    .mainsc__desc h2:not(:first-child) {
+      font-size: 2.1rem !important;
+      margin: 4rem 0;
+      letter-spacing: .1em; }
+
+  .mainsec__reason .mainsec__reason--title {
+    margin: 0 auto 4rem; }
+    .mainsec__reason .mainsec__reason--title h1 {
+      line-height: 1;
+      padding: 4rem 0; }
+  .mainsec__reason p {
+    font-size: 2rem; }
+
+  .road {
+    height: 20rem; }
+    .road p {
+      font-size: 2rem; }
+    .road div {
+      top: 8rem; }
+
+  .mainsec__about .mainsec__about--title {
+    margin: 0 auto 4rem; }
+    .mainsec__about .mainsec__about--title h1 {
+      line-height: 1.3;
+      padding: 4rem 0; }
+  .mainsec__about .skills {
+    max-width: 1170px;
+    margin: auto; }
+
+  .mainsec__caution {
+    background-size: cover; }
+    .mainsec__caution p {
+      font-size: 2rem; }
+    .mainsec__caution ul {
+      display: flex;
+      justify-content: space-between;
+      margin: 3rem auto 0;
+      width: 100%; }
+      .mainsec__caution ul li {
+        width: 32%; }
+        .mainsec__caution ul li h3 {
+          font-size: 1.6rem; }
+        .mainsec__caution ul li p {
+          font-size: 1.4rem; }
+        .mainsec__caution ul li p:last-child {
+          font-size: 1.6rem; }
+      .mainsec__caution ul li + li {
+        margin: 0; }
+
+  .mainsec__caution--blue p {
+    font-size: 2rem; }
+
+  .mainsec__study p {
+    font-size: 2rem; }
+  .mainsec__study span {
+    font-size: 1.6rem; }
+
+  .mainsec__merit .mainsec__merit--title h2 {
+    font-size: 2rem !important; }
+  .mainsec__merit ul {
+    margin-top: 2rem;
+    padding: 0 1.5rem; }
+    .mainsec__merit ul li {
+      margin: 1rem; }
+      .mainsec__merit ul li img {
+        width: 35rem;
+        height: 18rem; }
+      .mainsec__merit ul li div h5 {
+        font-size: 2rem;
+        text-align: left;
+        margin-left: 0; }
+      .mainsec__merit ul li div p {
+        font-size: 1.6rem;
+        padding: 0; }
+    .mainsec__merit ul li:nth-child(2) div {
+      padding: 0 2rem; }
+  .mainsec__merit .support {
+    margin: 4rem 2rem 4rem; }
+    .mainsec__merit .support h2 {
+      font-size: 2rem !important; }
+    .mainsec__merit .support p {
+      font-size: 1.6rem; }
+  .mainsec__merit p {
+    font-size: 1.4rem;
+    letter-spacing: .1em; }
+
+  .mainsec__member p {
+    font-size: 1.6rem; }
+
+  .really span {
+    font-size: 1.4rem; }
+  .really .really__title h4 {
+    font-size: 2.8rem;
+    line-height: 1.5; }
+
+  .possible h5 {
+    font-size: 1.6rem; }
+  .possible h6 {
+    font-size: 1.4rem;
+    letter-spacing: .1em; }
+  .possible ul {
+    width: 58%;
+    margin: 0 auto; }
+    .possible ul li .imgwrapper {
+      flex-basis: 32%; }
+    .possible ul li div {
+      flex-basis: 68%; }
+
+  .contents p {
+    font-size: 1.6rem;
+    margin-bottom: 3rem; }
+  .contents .blue-box-container {
+    width: 82rem; }
+    .contents .blue-box-container .blue-box {
+      flex-basis: 38rem; }
+      .contents .blue-box-container .blue-box ul li {
+        font-size: 1.6rem !important; }
+
+  .norisk h3 {
+    font-size: 2rem; }
+
+  .lecture h1 {
+    padding-top: 6rem; }
+  .lecture .flowpc ul {
+    padding: 0 2rem; }
+    .lecture .flowpc ul li .item .flowright p {
+      font-size: 1.6rem; }
+    .lecture .flowpc ul li .item .flowright span {
+      font-size: 1.4rem;
+      letter-spacing: .1em;
+      line-height: 1.5; }
+
+  .why {
+    padding: 10rem 10rem 8rem; }
+    .why h1 {
+      text-align: left; }
+    .why p {
+      font-size: 1.4rem;
+      letter-spacing: .1em; }
+    .why ul li {
+      font-size: 1.6rem; }
+    .why h4 {
+      font-size: 2rem; }
+
+  .present p {
+    font-size: 1.6rem;
+    margin-bottom: 4rem; }
+    .present p span {
+      font-size: 1.6rem; }
+  .present .zero {
+    top: 1rem;
+    width: 58rem; }
+    .present .zero h2 {
+      font-size: 2.8rem !important; }
+
+  .notvolunteer p {
+    font-size: 2rem; }
+
+  .message h5 {
+    font-size: 2rem;
+    margin-bottom: 4rem; }
+  .message div {
+    margin: 0 auto;
+    width: 76%; }
+    .message div .message__img {
+      padding-right: 3rem; }
+
+  #form span {
+    font-size: 1.6rem; }
+  #form form input[type="text"], #form form input[type="email"], #form form textarea, #form form div {
+    width: 60%; }
+
+  .questions {
+    padding: 6rem 14rem; }
+    .questions h1 {
+      margin-bottom: 4rem; }
+    .questions #accordion2 .question .question__title h5 {
+      padding: 1.8rem;
+      font-size: 2rem; }
+    .questions #accordion2 .question .question__title .gbox {
+      border-right: .55rem solid #e5e5e5;
+      border-bottom: .55rem solid #e5e5e5;
+      width: 1.4rem;
+      height: 1.4rem; }
+    .questions #accordion2 .question .collapse, .questions #accordion2 .question .collapsing {
+      padding: 2rem 2rem 2.5rem; }
+      .questions #accordion2 .question .collapse p, .questions #accordion2 .question .collapsing p {
+        font-size: 1.5rem; } }
+@media (min-width: 1200px) {
+  .possible ul {
+    width: 78rem;
+    margin: 0 auto; }
+    .possible ul li .imgwrapper img {
+      width: 24.3rem;
+      height: 24.3rem; }
+    .possible ul li div {
+      flex-basis: 68%; } }
+
+/*# sourceMappingURL=mediaqueryxl.css.map */

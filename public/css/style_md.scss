@@ -1,0 +1,118 @@
+@media screen and (min-width: 768px) {
+    .section_title {
+        top: 20px;
+    }
+    .pc_flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: row wrap;
+    }
+    .hamburger, .back {
+        display: none;
+    }
+    .br_sp {
+        display: none;
+    }
+    //header
+    #myMenu {
+        display: flex;
+        margin-left: auto;
+        padding-top: 35px;
+    }
+    nav {
+        background: transparent;
+        opacity: 1;
+        width: auto;
+        height: auto;
+        padding: 0;
+        transform: none;
+        left: auto;
+        right: 5%;   
+    }
+    #myMenu li {
+        transform: translateY(-150%);
+        opacity: 0;
+        border: none;
+        margin: 0;
+        font-size: 16px;
+        margin-right: 40px;
+        height: auto;
+        line-height: 24px;
+    }
+    @for $k from 1 through 4 {
+        #myMenu li:nth-child(#{$k}) {
+          transition: cubic-bezier(0.6, 0.14, 0.4, 0.89) .5s + .15s * $k;
+        }
+    }
+    .nav_li_in_pc {
+        transform: translateY(0) !important;
+        opacity: 1 !important;
+    }
+    //top 
+    #top {
+        padding-left: 15% !important;
+    }
+    //about {
+    #about {
+        .pc_flex {
+            justify-content: center;
+            align-items: flex-start;
+            .about_img {
+                width: 260px;
+                margin-bottom: 0 !important;
+                img {
+                    height: 240px !important;
+                    margin: 0 auto 30px 0 !important;
+                }
+            }
+            .about_txt {
+                width: 50%;
+            }
+        }
+    }
+    //works
+    #carousel {
+        width: 95% !important;
+        margin: 0 auto;
+        height: 460px !important;
+        padding-top: 50px;
+        #worklist {
+            height: 410px;
+            li {
+                min-width: 50%;
+                width: 50%;
+                h2 {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    #btns {
+        justify-content: center;
+        #prev, #next {
+            margin: 0 100px;
+        }
+    }
+    
+    //contact 
+    #contact ul {
+        align-items: flex-end !important;
+    }
+    @for $l from 1 through 4 {
+        .contact_link:nth-child(#{$l}) {
+            width: calc(45% + #{20px * $l}) !important;
+        }
+    }
+    .contact_link {
+        transform: skew(-10deg) translateX(calc(100% + 20px)) !important;
+        p {
+            font-size: 20px !important;
+        }
+    }
+    .slidein {
+        transform: skew(-10deg) translateX(20px) !important;
+    }
+
+    
+}

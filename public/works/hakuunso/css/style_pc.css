@@ -1,0 +1,206 @@
+@media (min-width: 768px) {
+  .br {
+    display: none; }
+
+  .br_pc {
+    display: block; }
+
+  header {
+    padding: 15px 18px;
+    min-width: 1080px; }
+    header .header_sp a {
+      height: 38px; }
+      header .header_sp a img {
+        width: 68px;
+        height: 100%; }
+    header .header_sp p {
+      display: none; }
+    header .collapse {
+      background: transparent;
+      display: flex;
+      align-items: center;
+      position: relative;
+      height: 50px; }
+      header .collapse ul {
+        width: 570px;
+        padding: 0;
+        margin-left: 8px;
+        display: flex;
+        align-items: flex-end;
+        flex-flow: row wrap; }
+        header .collapse ul li {
+          padding: 0;
+          font-size: 15px; }
+          header .collapse ul li .slash {
+            padding: 0 14px;
+            display: inline; }
+      header .collapse .lang_tel {
+        width: auto;
+        margin: 0;
+        margin-right: 18px;
+        margin-left: auto; }
+        header .collapse .lang_tel .tel {
+          display: none; }
+      header .collapse .reservations {
+        width: 185px;
+        margin: 0;
+        margin-right: 10px; }
+    header .hamburger {
+      display: none; }
+
+  main .opening_wrapper, main .snowfall_wrapper {
+    min-width: 1080px; }
+  main .main_txt {
+    min-width: 1080px; }
+    main .main_txt span {
+      bottom: 30px; }
+    main .main_txt span:after {
+      width: 12px;
+      height: 12px;
+      position: relative;
+      top: 7px; }
+    main .main_txt .summer_season {
+      font-size: 15px; }
+  main ul .main {
+    min-width: 1080px; }
+
+  .section_title {
+    margin-bottom: 15px; }
+    .section_title p {
+      font-size: 19px; }
+
+  .bg-silver {
+    padding: 40px 0;
+    min-width: 1080px; }
+    .bg-silver .flex_pc {
+      display: flex;
+      justify-content: center;
+      width: 1080px;
+      margin: 0 auto; }
+      .bg-silver .flex_pc .information {
+        width: 540px;
+        border-bottom: none;
+        padding-bottom: 10px; }
+        .bg-silver .flex_pc .information article a {
+          display: flex; }
+          .bg-silver .flex_pc .information article a p {
+            margin-right: 15px;
+            margin-bottom: 10px;
+            letter-spacing: .05em; }
+      .bg-silver .flex_pc .instagram {
+        width: 540px; }
+        .bg-silver .flex_pc .instagram ul {
+          height: auto; }
+          .bg-silver .flex_pc .instagram ul li {
+            width: 73px;
+            height: 73px; }
+    .bg-silver .recruit {
+      background-image: url(../img/bnr_work01.jpg);
+      width: 1080px;
+      height: 170px;
+      margin: 0 auto;
+      position: relative; }
+      .bg-silver .recruit a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; }
+        .bg-silver .recruit a img {
+          display: none; }
+
+  .location {
+    min-width: 1080px;
+    padding: 100px 0 180px; }
+    .location .location_inner {
+      width: 1080px;
+      margin: 0 auto; }
+      .location .location_inner h3 {
+        font-size: 22px; }
+      .location .location_inner p {
+        text-align: center;
+        font-size: 16px; }
+      .location .location_inner .about {
+        width: 320px;
+        height: 48px;
+        height: 48px; }
+        .location .location_inner .about a {
+          line-height: 48px;
+          font-size: 16px; }
+        .location .location_inner .about .cover {
+          height: 48px; }
+
+  .location:before {
+    display: none; }
+
+  .bnrlinks {
+    min-width: 1080px; }
+    .bnrlinks li {
+      width: 25%;
+      height: 400px;
+      background-size: 140%; }
+      .bnrlinks li .links_txt {
+        font-size: 16px;
+        padding-top: 60px; }
+        .bnrlinks li .links_txt h6 {
+          font-size: 24px; }
+        .bnrlinks li .links_txt img {
+          width: 90px;
+          height: 90px;
+          padding: 20px;
+          margin: 50px auto 40px; }
+
+  footer .bnrlinks_footer li {
+    width: 50%;
+    height: 400px; }
+    footer .bnrlinks_footer li .links_txt {
+      padding-top: 80px; }
+  footer .footer_main {
+    display: flex;
+    height: 390px;
+    min-width: 1080px; }
+    footer .footer_main .footer_txt {
+      width: 590px;
+      padding: 60px;
+      position: relative;
+      font-size: 16px; }
+      footer .footer_main .footer_txt .footer_title img {
+        width: 68px; }
+      footer .footer_main .footer_txt .footer_title p {
+        font-size: 20px;
+        letter-spacing: .3em; }
+      footer .footer_main .footer_txt .address {
+        font-size: 16px;
+        margin-bottom: 15px; }
+      footer .footer_main .footer_txt .contact {
+        display: flex;
+        align-items: center; }
+        footer .footer_main .footer_txt .contact p {
+          font-size: 24px;
+          margin: 0;
+          margin-right: 30px;
+          letter-spacing: .05em; }
+        footer .footer_main .footer_txt .contact .contact_btn {
+          width: 138px; }
+      footer .footer_main .footer_txt .email {
+        margin-top: 0;
+        margin-bottom: 40px; }
+      footer .footer_main .footer_txt .sitemap {
+        margin-bottom: 35px; }
+      footer .footer_main .footer_txt .copy {
+        font-size: 13px; }
+    footer .footer_main .footer_txt:after {
+      content: '';
+      position: absolute;
+      width: 200px;
+      height: 100%;
+      display: block;
+      top: 0;
+      right: -60px;
+      background: #fff;
+      transform: skew(-12deg); }
+    footer .footer_main .footer_img {
+      flex-grow: 1;
+      height: 100%; } }
+
+/*# sourceMappingURL=style_pc.css.map */

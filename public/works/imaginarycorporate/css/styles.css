@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html, body {
+  width: 100%;
+  height: 100%; }
+
+.navbar {
+  background: #222; }
+  .navbar a .navbar-text {
+    color: #fff; }
+  .navbar .navbar-toggler {
+    border-color: #343a40; }
+  .navbar .collapse ul li {
+    padding-right: 1rem; }
+
+.carousel-inner .carousel-item img {
+  width: 100%;
+  height: 100%;
+  min-height: 400px; }
+.carousel-inner .carousel-item .carousel-caption {
+  position: absolute;
+  left: 0;
+  right: 0; }
+.carousel-inner .carousel-item .bluelight {
+  top: 40%; }
+.carousel-inner .carousel-item .office {
+  top: 40%;
+  text-shadow: 0px 0px 5px #000; }
+.carousel-inner .carousel-item .shakehand {
+  top: 40%; }
+  .carousel-inner .carousel-item .shakehand h2 {
+    text-shadow: 0px 0px 10px #050461; }
+
+.col-md-6 img {
+  width: 100%;
+  border-radius: 5px; }
+
+.fa-code {
+  color: #e54d26; }
+
+.fa-bold {
+  color: #563d7c; }
+
+.fa-css3 {
+  color: #2163af; }
+
+.fa-js-square {
+  color: #f8d824; }
+
+.fa-vuejs {
+  color: #3fb37f; }
+
+.fa-react {
+  color: #5dd4f4; }
+
+.fa-code, .fa-bold, .fa-css3, .fa-js-square, .fa-vuejs, .fa-react {
+  font-size: 4em; }
+
+footer {
+  background: #444;
+  color: #ccc; }
+  footer .white {
+    border-top: 1px solid #ccc;
+    width: 85%;
+    margin: 1rem auto; }
+
+@media (min-width: 768px) {
+  .carousel-caption h2 {
+    font-size: 3em; } }
+@media (max-width: 576px) {
+  .navbar-text {
+    font-size: 1.5em; }
+
+  .carousel-caption h2 {
+    font-size: 1.5em; } }
+
+/*# sourceMappingURL=styles.css.map */

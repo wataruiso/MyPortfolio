@@ -1,0 +1,292 @@
+@media(min-width: 768px) {
+$main_width_pc: 1080px;
+
+// 改行~~~~~
+.br {
+  display: none;
+}
+.br_pc {
+  display: block;
+}
+// ~~~~~
+
+header {
+  padding: 15px 18px;
+  min-width: $main_width_pc;
+  .header_sp {
+    a {
+      height: 38px;
+      img {
+        width: 68px;
+        height: 100%;
+      }
+    }
+    p {
+      display: none;
+    }
+  }
+ .collapse {
+   background: transparent;
+   display: flex;
+   align-items: center;
+   position: relative;
+   height: 50px;
+    ul {
+      width: 570px;
+      padding: 0;
+      margin-left: 8px;
+      display: flex;
+      align-items: flex-end;
+      flex-flow: row wrap;
+      li {
+        padding: 0;
+        font-size: 15px;
+        a {
+        }
+        .slash {
+          padding: 0 14px;
+          display: inline;
+        }
+      }
+    }
+    .lang_tel {
+      width: auto;
+      margin: 0;
+      margin-right: 18px;
+      margin-left: auto;
+     .tel {
+       display: none;
+     }
+    }
+    .reservations {
+      width: 185px;
+      margin: 0;
+      margin-right: 10px;
+    }
+  }
+  .hamburger {
+    display: none;
+  }
+}
+
+main {
+  .opening_wrapper, .snowfall_wrapper {
+    min-width: $main_width_pc;
+  }
+  .main_txt {
+    min-width: $main_width_pc;
+    span {
+      bottom: 30px;
+    }
+    span:after {
+      width: 12px;
+      height: 12px;
+      position: relative;
+      top: 7px;
+    }
+    .summer_season {
+        font-size: 15px;
+    }
+  }
+  ul {
+    .main {
+      min-width: $main_width_pc;
+    }
+  }
+}
+
+.section_title {
+  margin-bottom: 15px;
+  p {
+    font-size: 19px;
+  }
+}
+
+.bg-silver {
+  padding: 40px 0;
+  min-width: $main_width_pc;
+  .flex_pc {
+    display: flex;
+    justify-content: center;
+    width: $main_width_pc;
+    margin: 0 auto;
+    .information {
+      width: 540px;
+      border-bottom: none;
+      padding-bottom: 10px;
+      article {
+        a {
+          display: flex;
+          p {
+            margin-right: 15px;
+            margin-bottom: 10px;
+            letter-spacing: .05em;
+          }
+        }
+      }
+    }
+    .instagram {
+      width: 540px;
+        ul {
+          height: auto;
+          li {
+            width: 73px;
+            height: 73px;
+          }
+        }
+    }
+  }
+
+  .recruit {
+    background-image: url(../img/bnr_work01.jpg);
+    width: $main_width_pc;
+    height: 170px;
+    margin: 0 auto;
+    position: relative;
+    a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      img {
+        display: none;
+      }
+    }
+  }
+}
+
+.location {
+  min-width: $main_width_pc;
+  padding: 100px 0 180px;
+  .location_inner {
+    width: $main_width_pc;
+    margin: 0 auto;
+    h3 {
+        font-size: 22px;
+    }
+    p {
+      text-align: center;
+      font-size: 16px;
+    }
+    .about {
+      width: 320px;
+      height: 48px;
+      height: 48px;
+      a {
+        line-height: 48px;
+        font-size: 16px;
+      }
+      .cover {
+        height: 48px;
+      }
+    }
+  }
+}
+.location:before {
+  display: none;
+}
+
+.bnrlinks {
+  min-width: $main_width_pc;
+  li {
+    width: 25%;
+    height: 400px;
+    background-size: 140%;
+    .links_txt {
+      font-size: 16px;
+      padding-top: 60px;
+      h6 {
+        font-size: 24px;
+      }
+      img {
+        width: 90px;
+        height: 90px;
+        padding: 20px;
+        margin: 50px auto 40px;
+      }
+    }
+  }
+}
+
+footer {
+  .bnrlinks_footer {
+    li {
+      width: 50%;
+      height: 400px;
+      .links_txt {
+        padding-top: 80px;
+      }
+    }
+  }
+
+  .footer_main {
+    display: flex;
+    height: 390px;
+    min-width: $main_width_pc;
+    .footer_txt {
+      width: 590px;
+      padding: 60px;
+      position: relative;
+      font-size: 16px;
+      .footer_title {
+        img {
+          width: 68px;
+        }
+        p {
+            font-size: 20px;
+            letter-spacing: .3em;
+        }
+      }
+      .address {
+        font-size: 16px;
+        margin-bottom: 15px;
+      }
+      .contact {
+        display: flex;
+        align-items: center;
+        p {
+          font-size: 24px;
+          margin: 0;
+          margin-right: 30px;
+          letter-spacing: .05em;
+        }
+        .contact_btn {
+          width: 138px;
+        }
+      }
+      .email {
+        margin-top: 0;
+        margin-bottom: 40px;
+      }
+      .sitemap {
+        margin-bottom: 35px;
+      }
+      .copy {
+        font-size: 13px;
+      }
+    }
+    .footer_txt:after {
+      content: '';
+      position: absolute;
+      width: 200px;
+      height: 100%;
+      display: block;
+      top: 0;
+      right: -60px;
+      background: #fff;
+      transform: skew(-12deg);
+    }
+    .footer_img {
+      flex-grow: 1;
+      height: 100%;
+
+    }
+  }
+
+
+}
+
+
+
+}

@@ -1,0 +1,419 @@
+@media(min-width: 1190px) {
+
+    h1 {
+       font-size: 2.8rem !important;
+    }
+    h2 {
+        font-size: 2rem !important;
+    }
+   
+
+    header {
+        div {
+            max-width: 119rem;
+            margin: 0 auto;
+            .header__title {
+                p {
+                    font-size: 1.4rem;
+                    letter-spacing: .1em;
+                }
+            }
+            .header__form--pink-pc {
+            width: 32rem;
+            height: 4.4rem;
+            line-height: 4.3rem;
+            a {
+                p {
+                font-size: 1.4rem;
+                letter-spacing: .1em;
+                }
+            }
+        }
+        }
+    }
+   
+    .mainsc {
+        .mainsc__paragraph {
+            padding-top: 8.5rem;
+            h2 {
+                font-weight: bold;
+                line-height: 1.2;
+            }
+        }
+    }
+   
+    .mainsc__desc {
+       padding: 3rem 8rem 4rem;
+       p {
+           letter-spacing: .2em;
+           font-size: 1.7rem;
+           font-weight: bold;
+           padding: .4rem;
+       }
+       a {
+           div {
+               margin: 5rem auto 7rem;
+               padding: 2rem;
+               height: 10.5rem;
+               h1 {
+                   font-size: 2.8rem !important;
+                   letter-spacing: .1em;
+               }
+           } 
+       }
+   
+       h2:not(:first-child) {
+           font-size: 2.1rem !important;
+          margin: 4rem 0;
+          letter-spacing: .1em;
+       }
+   }
+   
+   .mainsec__reason {
+       .mainsec__reason--title{
+           margin: 0 auto 4rem;
+           h1 {
+               line-height: 1;
+               padding: 4rem 0;
+           }
+       }
+      p {
+          font-size: 2rem;
+      }
+   }
+   .road {
+       height: 20rem;
+       p {
+           font-size: 2rem;
+       }
+       div {
+           top: 8rem;
+       }
+   }
+   .mainsec__about {
+       .mainsec__about--title {
+           margin: 0 auto 4rem;
+           h1 {
+               line-height: 1.3;
+               padding: 4rem 0;
+            }
+        }
+        .skills {
+            max-width: 1170px;
+            margin: auto;
+        }
+    }
+
+    .mainsec__caution {
+        background-size: cover;
+        p {
+            font-size: 2rem;
+        }
+        ul {
+            display: flex;
+            justify-content: space-between;
+            margin: 3rem auto 0;
+            width: 100%;
+            li {
+                width: 32%;
+                h3 {
+                    font-size: 1.6rem;
+                }
+                p {
+                    font-size: 1.4rem;
+                }
+                p:last-child {
+                    font-size: 1.6rem;
+                }
+            }
+            li + li {
+                margin: 0;
+            }
+        }
+    }
+    .mainsec__caution--blue {
+        p {
+            font-size: 2rem;
+        }
+    }
+   
+   .mainsec__study {
+       p {
+           font-size: 2rem;
+       }
+       span {
+           font-size: 1.6rem;
+       }
+   }
+
+   .mainsec__merit {
+       .mainsec__merit--title {
+           h2 {
+               font-size: 2rem !important;
+           }
+       }
+       ul {
+           margin-top: 2rem;
+           padding: 0 1.5rem;
+           li {
+               margin: 1rem;
+               img {
+                   width: 35rem;
+                   height: 18rem;
+               }
+               div {
+                   h5 {
+                    font-size: 2rem;
+                    text-align: left;
+                    margin-left: 0;
+                }
+                p {
+                    font-size: 1.6rem;
+                    padding: 0;
+                    
+                   }
+               }
+           }
+           li:nth-child(2) {
+               div {
+                   padding: 0 2rem;
+               }
+           }
+       }
+       .support {
+           margin: 4rem 2rem 4rem;
+           h2 {
+            font-size: 2rem !important;
+           }
+           p {
+            font-size: 1.6rem;
+           }
+       }
+       p {
+           font-size: 1.4rem;
+           letter-spacing: .1em;
+       }
+   }
+
+
+   .mainsec__member {
+       p {
+           font-size: 1.6rem;
+       }
+   }
+
+   .really {
+       span {
+            font-size: 1.4rem;
+       }
+       .really__title {
+           h4 {
+               font-size: 2.8rem;
+               line-height: 1.5;
+           }
+       }
+   }
+   
+   .possible {
+       h5 {
+        font-size: 1.6rem;
+        }
+    h6 {
+        font-size: 1.4rem;
+        letter-spacing: .1em;
+       }
+       ul {
+           width: 58%;
+           margin: 0 auto;
+           li {
+               .imgwrapper {
+                flex-basis: 32%;
+            }
+            div {
+                flex-basis: 68%;
+
+               }
+           }
+       }
+   }
+
+   .contents {
+        p {
+            font-size: 1.6rem;
+            margin-bottom: 3rem;
+        }
+        .blue-box-container {
+            width: 82rem;
+            .blue-box {
+                flex-basis: 38rem;
+                ul {
+                    li {
+                        font-size: 1.6rem !important;
+                    }
+                }
+            }
+        }
+   }
+   .norisk {
+       h3 {
+           font-size: 2rem;
+       }
+   }
+
+   .lecture {
+      h1 {
+        padding-top: 6rem;
+      }
+        .flowpc {
+            ul {
+                padding: 0 2rem;
+                li {
+                    .item {
+                        .flowright {
+                            p {
+                                font-size: 1.6rem;
+                            }
+                            span {
+                                font-size: 1.4rem;
+                                letter-spacing: .1em;
+                                line-height: 1.5;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+      
+    }
+
+    .why {
+        padding: 10rem 10rem 8rem;
+        h1 {
+         text-align: left;
+        //  padding: 0;
+        }
+        p {
+            font-size: 1.4rem;
+            letter-spacing: .1em;
+        }
+        ul {
+            li {
+                font-size: 1.6rem;
+            }
+        }
+        h4 {
+            font-size: 2rem;
+        }
+    }
+
+    .present {
+        p {
+            font-size: 1.6rem;
+            margin-bottom: 4rem;
+            span {
+                font-size: 1.6rem;
+            }
+        }
+        .zero {
+            top: 1rem;
+            width: 58rem;
+            h2 {
+                font-size: 2.8rem !important;
+            }
+        }
+    }
+
+    .notvolunteer {
+        p {
+            font-size: 2rem;
+        }
+    }
+
+
+    .message {
+    h5 {
+        font-size: 2rem;
+        margin-bottom: 4rem;
+    }
+    div {
+        margin: 0 auto;
+        width: 76%;
+        .message__img {
+            padding-right: 3rem;
+            }
+        }
+    }
+
+    #form {
+        span {
+            font-size: 1.6rem;
+        }
+        form {
+            input[type="text"], input[type="email"], textarea, div {
+               width: 60%;
+            }
+        }
+    }
+
+    .questions {
+        padding: 6rem 14rem;
+        h1 {
+            margin-bottom: 4rem;
+        }
+        #accordion2 {
+            .question {
+                .question__title {
+                    h5 {
+                        padding: 1.8rem;
+                        font-size: 2rem;
+                    }
+                    .gbox {
+                        border-right: .55rem solid #e5e5e5;
+                        border-bottom: .55rem solid #e5e5e5;
+                        width: 1.4rem;
+                        height: 1.4rem;
+                    }
+                }
+                .collapse, .collapsing {
+                    padding: 2rem 2rem 2.5rem;
+                    p {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    
+    }
+   
+}
+
+
+@media(min-width: 1200px) {
+    .possible {
+        ul {
+            width: 78rem;
+            margin: 0 auto;
+            li {
+                .imgwrapper {
+                    img {
+                        width: 24.3rem;
+                        height: 24.3rem;
+                    }
+             }
+             div {
+                 flex-basis: 68%;
+ 
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+}

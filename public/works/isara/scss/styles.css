@@ -1,0 +1,943 @@
+* {
+  margin: 0;
+  font-family: Meiryo, sans-serif;
+  text-align: center;
+  padding: 0;
+  font-weight: normal;
+  box-sizing: border-box;
+  color: #333; }
+
+html {
+  font-size: 62.5%; }
+
+h1 {
+  font-weight: bold;
+  letter-spacing: .2rem;
+  font-size: 1.8rem !important; }
+
+h2 {
+  font-weight: bold;
+  font-size: 1.6rem !important;
+  letter-spacing: .15rem;
+  line-height: 1.6rem; }
+
+.afterbreak {
+  display: none; }
+
+.pinkhover:hover {
+  background: #ce4040 !important; }
+
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 6.3rem;
+  background: #fff;
+  border-bottom: 0.5px solid white;
+  z-index: 5; }
+  header .header__title {
+    color: #333;
+    float: left;
+    padding: .8rem;
+    height: 100%; }
+    header .header__title p {
+      font-size: 1rem;
+      font-weight: bold;
+      text-align: left;
+      margin-bottom: 0; }
+    header .header__title img {
+      width: 9rem;
+      float: left; }
+  header .header__form--pink {
+    background: #da6b64;
+    padding: .8rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%; }
+    header .header__form--pink img {
+      height: 2.4rem; }
+    header .header__form--pink a {
+      padding: .4rem;
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.2rem;
+      letter-spacing: .1em;
+      display: block; }
+    header .header__form--pink a:hover {
+      text-decoration: underline; }
+  header .header__form--pink-pc {
+    background: #da6b64;
+    border-radius: 5rem;
+    width: 26rem;
+    height: 4rem;
+    float: right;
+    margin: auto .5rem;
+    display: none;
+    line-height: 4rem; }
+    header .header__form--pink-pc a {
+      text-decoration: none; }
+      header .header__form--pink-pc a p {
+        color: #fff;
+        font-size: 1.2rem; }
+
+.mainsc {
+  background-image: url(../img/mainsp.jpg);
+  background-position: center;
+  background-size: cover; }
+  .mainsc .mainsc__paragraph {
+    padding: 2rem 0 2.5rem; }
+    .mainsc .mainsc__paragraph h1 {
+      line-height: 1.6em;
+      margin: 0; }
+    .mainsc .mainsc__paragraph img {
+      width: 38rem;
+      height: 17rem;
+      padding: 1.8rem 3rem 3.6rem; }
+    .mainsc .mainsc__paragraph h2 {
+      margin: 0;
+      font-size: 1.5rem !important; }
+
+.mainsc__desc {
+  background: #ebb94d;
+  color: #ffffff;
+  padding: 1.6rem 2rem 2.5rem; }
+  .mainsc__desc p {
+    letter-spacing: .1em;
+    font-size: 1.4rem;
+    color: #c7254e;
+    background: #ffffff;
+    border-radius: .5rem;
+    font-family: Consolas, sans-serif;
+    margin: 0 auto;
+    display: inline;
+    padding: .2rem; }
+  .mainsc__desc a {
+    text-decoration: none; }
+    .mainsc__desc a div {
+      margin: 2.5rem auto 0;
+      display: flex;
+      align-items: center;
+      background: #da6b64;
+      border-radius: 5rem;
+      padding: 1.5rem;
+      justify-content: center; }
+      .mainsc__desc a div h1 {
+        color: #fff;
+        line-height: 3.2rem;
+        font-size: 2rem !important;
+        letter-spacing: normal;
+        width: 90%;
+        margin: 0; }
+  .mainsc__desc h2 {
+    font-size: 1.5rem !important; }
+  .mainsc__desc h2:not(:first-child) {
+    margin: 2.5rem 0;
+    line-height: 2.5rem;
+    letter-spacing: normal; }
+  .mainsc__desc h2:first-child {
+    padding-bottom: 1rem;
+    line-height: 1.7; }
+  .mainsc__desc ul {
+    display: flex;
+    list-style-type: none;
+    width: 22rem;
+    justify-content: space-between;
+    margin: 0 auto;
+    font-size: 1.1rem; }
+    .mainsc__desc ul li {
+      padding: 0.2rem 1rem;
+      border-radius: 0.3rem; }
+      .mainsc__desc ul li a {
+        color: white;
+        text-decoration: none; }
+    .mainsc__desc ul li:first-child {
+      background: #1b95e0; }
+      .mainsc__desc ul li:first-child a:before {
+        content: "\f099";
+        font-family: FontAwesome;
+        margin-right: 0.5rem; }
+    .mainsc__desc ul li:not(:first-child) {
+      background: #1877f2; }
+      .mainsc__desc ul li:not(:first-child) a {
+        font-weight: bold; }
+    .mainsc__desc ul li:nth-child(2) a:before {
+      content: "\f164";
+      font-family: FontAwesome;
+      margin-right: 0.5rem; }
+
+.box__left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3rem;
+  height: 3rem;
+  border-top: 0.4rem solid #ebb94d;
+  border-left: 0.4rem solid #ebb94d; }
+
+.box__right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 3rem;
+  height: 3rem;
+  border-right: 0.4rem solid #ebb94d;
+  border-bottom: 0.4rem solid #ebb94d; }
+
+.mainsec__reason {
+  color: #333333;
+  padding: 3rem 1.6rem 1rem; }
+  .mainsec__reason .mainsec__reason--title {
+    position: relative;
+    max-width: 86rem;
+    margin: 0 auto; }
+    .mainsec__reason .mainsec__reason--title h1 {
+      padding: 2.2rem 0 2rem;
+      line-height: 2.2;
+      color: #333333; }
+  .mainsec__reason p {
+    font-size: 1.5rem;
+    line-height: 1.7;
+    margin: 1.8rem; }
+
+.road {
+  background-image: url(../img/introbottom.jpg);
+  background-position: bottom;
+  background-size: cover;
+  height: 16rem; }
+  .road p {
+    font-size: 1.5rem;
+    line-height: 1.7; }
+    .road p span {
+      font-weight: bold;
+      background: linear-gradient(transparent 70%, #ebb94d 70%); }
+  .road div {
+    width: 6rem;
+    border-radius: 100%;
+    background: #ebb94d;
+    color: #ffffff;
+    font-size: 1.2rem;
+    line-height: 6rem;
+    margin: auto;
+    letter-spacing: .1em;
+    position: relative;
+    top: 4.5rem; }
+
+.mainsec__about {
+  background: #fef5e0;
+  color: #333333;
+  padding: 7rem 1.6rem; }
+  .mainsec__about .mainsec__about--title {
+    position: relative;
+    max-width: 86rem;
+    margin: 0 auto; }
+    .mainsec__about .mainsec__about--title h1 {
+      padding: 2.4rem 0 2rem;
+      line-height: 2.2;
+      color: #333333; }
+  .mainsec__about h2 {
+    margin: 2.2rem 0 2.8rem;
+    line-height: 1.6;
+    font-size: 1.5rem !important; }
+  .mainsec__about .skills {
+    background: #fff;
+    border: 0.2rem solid #ebb94d;
+    border-radius: 0.3rem; }
+    .mainsec__about .skills h2 {
+      margin: 1.5rem auto 1.2rem;
+      line-height: 1.5; }
+    .mainsec__about .skills ul li {
+      display: inline-block;
+      padding: .8rem; }
+      .mainsec__about .skills ul li img {
+        width: 3rem;
+        height: 3rem; }
+      .mainsec__about .skills ul li p {
+        padding: 1rem 0;
+        font-size: 1rem;
+        letter-spacing: 0.1em;
+        margin: 0; }
+    .mainsec__about .skills ul li:nth-child(3) img {
+      width: 2.5rem; }
+    .mainsec__about .skills ul li:last-child img {
+      width: 7rem; }
+
+.mainsec__caution {
+  color: #fff;
+  background-image: url(../img/aboutsecondbgsp.jpg);
+  background-size: cover;
+  background-position: center;
+  letter-spacing: .1em;
+  padding: 5rem 3rem 4rem; }
+  .mainsec__caution h1 {
+    line-height: 1.1em;
+    margin-bottom: 2rem; }
+  .mainsec__caution p {
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.3rem;
+    margin: 1.5rem;
+    letter-spacing: normal; }
+    .mainsec__caution p span {
+      color: #ebb94d;
+      font-weight: bold; }
+  .mainsec__caution ul {
+    list-style-type: none;
+    margin-top: 3rem; }
+    .mainsec__caution ul li {
+      border-radius: .5rem;
+      background: #fff;
+      padding: 1.5rem 8%; }
+      .mainsec__caution ul li h3 {
+        color: #fff;
+        font-weight: bold;
+        background: #ebb94d;
+        border-radius: .5rem;
+        margin-bottom: 1.4rem;
+        font-size: 1.2rem;
+        padding: 0.2rem; }
+      .mainsec__caution ul li p {
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: #000;
+        line-height: 1.4em;
+        letter-spacing: .1em;
+        margin: .8rem auto 0; }
+    .mainsec__caution ul li + li {
+      margin-top: 1.4rem; }
+
+.mainsec__caution--blue {
+  background: #016ea9;
+  padding: 2rem; }
+  .mainsec__caution--blue p {
+    letter-spacing: .1em;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    margin: 0; }
+    .mainsec__caution--blue p span {
+      font-weight: bold;
+      color: #ebb94d; }
+
+.mainsec__study {
+  background: #ffffff;
+  color: #333;
+  padding: 0 9% 3rem; }
+  .mainsec__study h1 {
+    margin: 5rem; }
+    .mainsec__study h1 span {
+      font-size: 1.2rem;
+      font-weight: bold; }
+  .mainsec__study p {
+    font-size: 1.5rem;
+    letter-spacing: 0.1em; }
+  .mainsec__study ul {
+    margin: 1.5rem auto;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between; }
+    .mainsec__study ul li {
+      margin: 0.5rem;
+      max-width: 12rem;
+      max-height: 12rem; }
+      .mainsec__study ul li img {
+        width: 100%;
+        height: 100%; }
+  .mainsec__study span {
+    font-size: 1.2rem;
+    letter-spacing: .1em;
+    font-weight: bold; }
+
+.mainsec__merit {
+  background: #fef5e0;
+  color: #333333;
+  padding: 2.5rem 1.5rem 3.2rem; }
+  .mainsec__merit .mainsec__merit--title {
+    position: relative;
+    padding: 1.5rem 0 1rem; }
+    .mainsec__merit .mainsec__merit--title h2 {
+      font-size: 1.5rem !important;
+      padding: 1.5rem;
+      line-height: 1.4; }
+  .mainsec__merit ul li {
+    margin-top: 2rem;
+    list-style: none; }
+    .mainsec__merit ul li img {
+      object-fit: cover;
+      width: 100%;
+      height: 12rem; }
+    .mainsec__merit ul li div {
+      padding: 0 2rem; }
+      .mainsec__merit ul li div h5 {
+        color: #ebb94d;
+        font-weight: bold;
+        margin: 1.2rem;
+        font-size: 1.5rem;
+        letter-spacing: .1em; }
+      .mainsec__merit ul li div p {
+        font-size: 1.2rem;
+        text-align: left;
+        letter-spacing: 0.1em; }
+  .mainsec__merit .support {
+    background: #fff;
+    border: 0.2rem solid #ebb94d;
+    border-radius: 0.3rem;
+    padding: 1.5rem 1rem 2rem;
+    font-weight: bold;
+    margin: 2.5rem 0.5rem 1.5rem; }
+    .mainsec__merit .support h1 {
+      font-weight: inherit;
+      color: #ebb94d; }
+    .mainsec__merit .support h2 {
+      font-size: 1.5rem !important;
+      margin: 1.6rem auto 1.2rem;
+      line-height: 1.5; }
+    .mainsec__merit .support p {
+      font-weight: bold;
+      font-size: 1rem;
+      margin: 0; }
+  .mainsec__merit p {
+    font-size: 1.2rem;
+    line-height: 1.6; }
+
+.mainsec__member {
+  background-image: url(../img/teacherbgsp.jpg);
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  padding: 6rem 1rem 2rem;
+  font-size: 1.2rem;
+  letter-spacing: .1em; }
+  .mainsec__member h1:before {
+    content: "\f2c2";
+    font-family: FontAwesome; }
+  .mainsec__member p {
+    font-weight: bold;
+    padding-top: 3.5rem;
+    color: #fff; }
+  .mainsec__member ul li {
+    list-style: none; }
+    .mainsec__member ul li img {
+      border-radius: 50%;
+      width: 12rem;
+      height: 12rem;
+      float: top;
+      transform: translateY(3rem); }
+    .mainsec__member ul li .member {
+      margin: 0 auto;
+      border: .3rem solid #fff;
+      padding: 0 .5rem 1rem; }
+      .mainsec__member ul li .member p {
+        padding: 0;
+        font-weight: normal; }
+      .mainsec__member ul li .member p:first-child {
+        margin-top: 4rem; }
+      .mainsec__member ul li .member p:last-child {
+        padding: .6rem;
+        text-align: left; }
+
+.really {
+  background: #ebb94d;
+  padding: 1.5rem; }
+  .really span {
+    display: block;
+    border-radius: 50%;
+    background: #fff;
+    width: 6rem;
+    height: 6rem;
+    line-height: 6rem;
+    margin: .8rem auto;
+    color: #ebb94d;
+    letter-spacing: .1em;
+    font-size: 1.2rem; }
+  .really .really__title {
+    margin: 0;
+    position: relative; }
+    .really .really__title .box__left {
+      border-color: #fff; }
+    .really .really__title h4 {
+      color: #fff;
+      letter-spacing: .1em;
+      font-weight: bold;
+      font-size: 1.4rem;
+      line-height: 3;
+      padding: 1rem; }
+    .really .really__title .box__right {
+      border-color: #fff; }
+
+.really:after {
+  content: '';
+  transform: rotate(45deg);
+  background: #ebb94d;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: block;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0; }
+
+.possible h1 {
+  padding-top: 2.5rem; }
+.possible h5 {
+  font-weight: bold;
+  letter-spacing: .1em;
+  margin-top: 1.7rem; }
+.possible h6 {
+  padding: 2.5rem;
+  font-size: 1.2rem;
+  line-height: 1.5; }
+.possible ul {
+  list-style: none; }
+  .possible ul li {
+    height: auto;
+    display: flex;
+    margin-bottom: 4rem; }
+    .possible ul li .imgwrapper {
+      display: inline-block;
+      position: relative;
+      flex-basis: 32%;
+      margin: 0 1rem; }
+      .possible ul li .imgwrapper img {
+        border: 0.2rem solid #ebb94d;
+        margin-right: 1.2rem;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0; }
+    .possible ul li .imgwrapper:before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 0;
+      padding-bottom: 100%; }
+    .possible ul li div {
+      flex-basis: 68%;
+      margin-left: .5rem;
+      margin-right: 1rem; }
+      .possible ul li div p {
+        color: #777;
+        font-size: 18px;
+        font-weight: normal;
+        letter-spacing: .1em;
+        text-align: left; }
+      .possible ul li div blockquote {
+        color: #777;
+        text-decoration: underline;
+        font-size: 15px;
+        letter-spacing: .1em;
+        text-align: left; }
+        .possible ul li div blockquote span {
+          color: #777;
+          font-style: italic;
+          padding: 0; }
+
+.contents {
+  background-image: url(../img/classbgsp.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 4.5rem 1rem 2rem; }
+  .contents h1 {
+    color: white; }
+  .contents p {
+    color: white;
+    font-weight: bold;
+    letter-spacing: .1em;
+    font-size: 1.2rem;
+    padding: 1rem 0 2rem; }
+  .contents .blue-box-container .blue-box {
+    border: 0.2rem solid #016ea9;
+    border-radius: .8rem;
+    margin-bottom: 1.5rem; }
+    .contents .blue-box-container .blue-box h2 {
+      background: #016ea9;
+      margin: 0;
+      padding: 2rem;
+      color: #fff; }
+    .contents .blue-box-container .blue-box ul {
+      margin: 0;
+      list-style: none; }
+      .contents .blue-box-container .blue-box ul li {
+        background: #fff;
+        padding: 1rem;
+        font-weight: bold;
+        font-size: 1.2rem;
+        letter-spacing: .1em; }
+      .contents .blue-box-container .blue-box ul li:not(:first-child) {
+        border-top: .1rem dotted #ccc; }
+      .contents .blue-box-container .blue-box ul li:last-child {
+        border-radius: 0 0 .8rem .8rem; }
+      .contents .blue-box-container .blue-box ul li:first-child {
+        padding-top: 1.5rem; }
+
+.norisk {
+  background: #016ea9;
+  color: #fff;
+  margin: 0;
+  padding: 2rem 0; }
+  .norisk h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: .1em;
+    line-height: 1.5; }
+
+.lecture {
+  padding-bottom: 5rem; }
+  .lecture h1 {
+    padding: 4rem; }
+  .lecture h1:before {
+    content: "\f109";
+    font-family: FontAwesome; }
+  .lecture .flowpc {
+    display: none; }
+  .lecture #accordion {
+    padding: 0 2rem; }
+    .lecture #accordion .item {
+      background: #fef5e0;
+      list-style-type: none;
+      border-radius: .4rem; }
+      .lecture #accordion .item .title {
+        user-select: none;
+        cursor: pointer;
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: 1rem; }
+        .lecture #accordion .item .title img {
+          width: 3.5rem;
+          height: 3.5rem; }
+        .lecture #accordion .item .title h5 {
+          margin: 0; }
+          .lecture #accordion .item .title h5 a {
+            color: #000;
+            padding-left: 1.6rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+            letter-spacing: .1em; }
+        .lecture #accordion .item .title h5:hover {
+          text-decoration: underline; }
+        .lecture #accordion .item .title .box {
+          position: absolute;
+          right: 2rem;
+          top: 2rem;
+          transform: rotate(45deg);
+          border-right: .4rem solid #000;
+          border-bottom: .4rem solid #000;
+          width: 1rem;
+          height: 1rem; }
+        .lecture #accordion .item .title .spin {
+          transform: rotateZ(225deg); }
+      .lecture #accordion .item .collapse, .lecture #accordion .item .collapsing {
+        padding: 1.5rem;
+        padding-top: .8rem; }
+        .lecture #accordion .item .collapse p, .lecture #accordion .item .collapsing p {
+          font-size: 1.2rem;
+          font-weight: bold;
+          letter-spacing: .1em;
+          text-align: left;
+          margin: 0; }
+        .lecture #accordion .item .collapse span, .lecture #accordion .item .collapsing span {
+          text-align: left;
+          font-size: 1.2rem;
+          display: block;
+          padding: 1rem 0; }
+    .lecture #accordion .item + .item {
+      margin-top: .3rem; }
+
+.why {
+  background-image: url(../img/bangkokbgsp.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 3rem 4rem 2rem; }
+  .why h1 {
+    font-size: 2.4rem !important;
+    letter-spacing: .1em;
+    padding: 1rem 0; }
+  .why p {
+    color: #fff;
+    text-align: left;
+    font-size: 1.2rem;
+    padding: 1em;
+    padding-left: 0; }
+  .why ul li {
+    color: #fff;
+    text-align: left;
+    list-style-position: inside;
+    margin-bottom: .8em;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: .1em; }
+  .why h4 {
+    text-align: left;
+    font-weight: bold;
+    letter-spacing: .1em;
+    padding: 1.6rem 0; }
+
+.present {
+  background: #f7c23c;
+  padding: 2.5rem 1.5rem 1.5rem; }
+  .present h1 {
+    margin: 0 auto 2rem; }
+  .present h1:before {
+    content: "\f06b";
+    font-family: FontAwesome; }
+  .present .zero {
+    margin: 0 auto;
+    padding: 0 2rem;
+    background: #f7c23c;
+    position: relative;
+    top: 1.5rem;
+    width: 25rem;
+    height: 4rem; }
+    .present .zero h2 {
+      position: absolute;
+      font-size: 1.8rem !important;
+      line-height: 1.7em;
+      text-align: center;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0; }
+  .present p {
+    font-weight: bold;
+    letter-spacing: .1em;
+    font-size: 1.2rem;
+    margin: 3rem auto 2rem; }
+    .present p span {
+      font-size: 1.2rem;
+      letter-spacing: .1em;
+      font-weight: bold;
+      color: #fff; }
+  .present ul {
+    border: .2rem solid #fff;
+    padding: 3.5rem 3rem 4rem;
+    margin-bottom: 0; }
+    .present ul li {
+      list-style: none;
+      display: flex; }
+      .present ul li div {
+        flex-basis: 6rem;
+        margin: 1.5rem 2rem;
+        border-radius: 50%;
+        background: #fff;
+        width: 6rem;
+        height: 6rem;
+        line-height: 6rem;
+        color: #f7c23c;
+        font-size: 1.2rem;
+        font-weight: bold;
+        letter-spacing: .1em; }
+      .present ul li p {
+        text-align: left;
+        flex-basis: 50%;
+        flex-grow: 1;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #fff;
+        letter-spacing: .1em; }
+      .present ul li h6 {
+        display: none; }
+
+.notvolunteer {
+  background-image: url(../img/specialdetailsp.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 2rem; }
+  .notvolunteer h1 {
+    color: #fff;
+    margin-bottom: 2rem;
+    line-height: 1.5; }
+  .notvolunteer p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    letter-spacing: .1em;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 2rem; }
+  .notvolunteer .notvolunteer__value {
+    margin: 3rem auto;
+    color: #fff;
+    position: relative;
+    max-width: 86rem; }
+    .notvolunteer .notvolunteer__value .box__left, .notvolunteer .notvolunteer__value .box__right {
+      border-color: #fff; }
+    .notvolunteer .notvolunteer__value h1 {
+      line-height: 2.4;
+      padding: 1rem; }
+
+.message {
+  padding: 5rem 1.5rem 4rem; }
+  .message h1 {
+    margin-bottom: 5rem; }
+  .message h5 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: .1em;
+    line-height: 1.5;
+    margin-bottom: 2rem; }
+  .message div .message__img img {
+    width: 100%;
+    height: auto; }
+  .message div .message__txt {
+    padding-top: 1rem; }
+    .message div .message__txt p {
+      text-align: left;
+      font-size: 1.4rem;
+      font-weight: normal;
+      letter-spacing: .1em;
+      line-height: 1.5; }
+    .message div .message__txt p + p {
+      margin-top: 1rem; }
+    .message div .message__txt ul {
+      margin: 3.5rem 0; }
+      .message div .message__txt ul li {
+        line-height: 1.5;
+        letter-spacing: .1em;
+        text-align: left;
+        font-size: 1.4rem;
+        list-style-position: inside; }
+
+#form {
+  background: #ebb94d;
+  padding: 4rem 1.5rem; }
+  #form h1 {
+    margin-bottom: 3rem; }
+  #form h1:before {
+    content: "\f15c";
+    font-family: FontAwesome; }
+  #form span {
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: .1em;
+    margin-bottom: 3rem;
+    display: block; }
+  #form form input[type="text"], #form form input[type="email"], #form form textarea {
+    display: block;
+    text-align: left;
+    color: #777;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1.4rem;
+    border-radius: .5rem;
+    border: none;
+    margin-top: 2.5rem; }
+  #form form input[type="text"], #form form input[type="email"] {
+    padding: 1.8rem 1rem; }
+  #form form textarea {
+    padding: 1rem;
+    margin: 4rem auto; }
+  #form form div {
+    background: #da6b64;
+    color: #fff;
+    border-radius: 3rem;
+    font-size: 2.2rem;
+    font-weight: bold;
+    letter-spacing: 1em;
+    padding: 1rem;
+    cursor: pointer;
+    margin: 0 auto; }
+
+.questions {
+  padding: 5rem 1.5rem 4rem; }
+  .questions h1 {
+    margin-bottom: 3rem; }
+  .questions h1:before {
+    content: "\f2b6";
+    font-family: FontAwesome; }
+  .questions #accordion2 .question .question__title {
+    margin-bottom: .5rem;
+    display: flex;
+    align-items: center;
+    border: .1rem solid #e5e5e5;
+    box-shadow: 0 .01rem .2rem #e5e5e5;
+    border-radius: .3rem; }
+    .questions #accordion2 .question .question__title h5 {
+      text-align: left;
+      padding: .6em;
+      font-size: 1.5rem;
+      margin: 0; }
+      .questions #accordion2 .question .question__title h5 a {
+        letter-spacing: 0.1em;
+        color: #000;
+        font-weight: bold; }
+      .questions #accordion2 .question .question__title h5 a:hover {
+        text-decoration: underline; }
+    .questions #accordion2 .question .question__title h5:before {
+      content: "\f059";
+      font-family: FontAwesome;
+      color: #016ea9; }
+    .questions #accordion2 .question .question__title .gbox {
+      transform: rotate(45deg);
+      border-right: .4rem solid #e5e5e5;
+      border-bottom: .4rem solid #e5e5e5;
+      width: 1rem;
+      height: 1rem;
+      margin-left: auto;
+      margin-right: 1rem; }
+    .questions #accordion2 .question .question__title .spin {
+      transform: rotateZ(225deg); }
+  .questions #accordion2 .question .collapse, .questions #accordion2 .question .collapsing {
+    padding: 1.5rem 1.5rem 2.5rem; }
+    .questions #accordion2 .question .collapse p, .questions #accordion2 .question .collapsing p {
+      text-align: left;
+      font-size: 1.2rem;
+      font-weight: bold;
+      letter-spacing: 0.15em; }
+
+footer {
+  padding: 2rem 0 1rem;
+  background: #ececec; }
+  footer span {
+    display: block;
+    font-size: .95rem;
+    letter-spacing: .2em; }
+    footer span a {
+      color: #337ab7; }
+  footer ul {
+    display: flex;
+    list-style-type: none;
+    width: 22rem;
+    justify-content: space-between;
+    margin: 2rem auto 3rem;
+    font-size: 1.1rem; }
+    footer ul li {
+      padding: 0.2rem 1rem;
+      border-radius: 0.3rem; }
+      footer ul li a {
+        color: white;
+        text-decoration: none; }
+    footer ul li:first-child {
+      background: #1b95e0; }
+      footer ul li:first-child a:before {
+        content: "\f099";
+        font-family: FontAwesome;
+        margin-right: 0.5rem; }
+    footer ul li:not(:first-child) {
+      background: #1877f2; }
+      footer ul li:not(:first-child) a {
+        font-weight: bold; }
+    footer ul li:nth-child(2) a:before {
+      content: "\f164";
+      font-family: FontAwesome;
+      margin-right: 0.5rem; }
+  footer #scrollTop {
+    padding: 1rem;
+    background: #ececec;
+    width: 4.6rem;
+    height: 5rem;
+    position: fixed;
+    right: 1rem;
+    bottom: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-content: center; }
+    footer #scrollTop div {
+      transform: rotate(45deg);
+      border-top: .3rem solid #333;
+      border-left: .3rem solid #333;
+      width: 1rem;
+      height: 1rem;
+      margin: auto; }
+
+/*# sourceMappingURL=styles.css.map */

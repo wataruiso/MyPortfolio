@@ -1,0 +1,222 @@
+$eyecatch: url(../img/moonlight.jpg) left top / cover;
+$slow_end: cubic-bezier(0.6, 0.14, 0.4, 0.89);
+$lightaqua: rgb(128, 255, 255);
+
+* {
+  font-family: 'Kaushan Script', 'Courgette', 'Marck Script','Kosugi','M PLUS Rounded 1c',cursive;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.flexbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bg_wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.purple {
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0) 1%,rgba(1, 14, 88, 0.5), rgba(37, 0, 105, 0.7));
+}
+.navy {
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0) 1%,rgba(26, 65, 150, 0.3), rgba(27, 54, 129, 0.5));
+}
+.aqua {
+  background: linear-gradient(45deg, rgba(13, 112, 151, 0.6) 1%, rgba(15, 80, 141, 0.3), rgba(0, 0, 0, 0));
+}
+
+.huerotate {
+  background-size: 600% 100%;
+  animation: huerotate 20s infinite;
+}
+@keyframes huerotate {
+0% {background-position: 0% 50%;}
+50% {background-position: 100% 50%;}
+100% {background-position: 0% 50%;}
+}
+@keyframes black_wrap_move {
+0% {background-position: 0% 100%;}
+100% {background-position: 100% 0%;}
+}
+
+.section_title {
+    position: absolute;
+    top: 15px;
+    left: -12px;
+    font-size: 20px;
+    transform: skew(-20deg) translateX(-100%);
+    background: #fff6;
+    padding: 5px 20px;
+    transition: .4s $slow_end;
+}
+
+.titlein {
+  transform: skew(-20deg) translateX(0) !important;
+}
+.fadein {
+  transition: .4s $slow_end;
+  opacity: 0;
+}
+.slidein {
+  transform: skew(-10deg) translateX(-20px) !important;
+}
+.show {
+  transform: translateX(0);
+  opacity: 1;
+}
+.flash {
+  animation: fadein .8s infinite alternate;
+}
+
+@for $i from 1 through 26 {
+  .fadein-#{$i} { animation: fadein 2s + .1s * $i; }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.intro_animation1 {//black
+  animation: black_wrap_move 3s forwards;
+}
+.intro_animation2 {//black, txt
+  opacity: 0 !important;
+}
+.intro_animation3 {//black, txt
+  display: none;
+}
+.intro_animation4 {//hamburger_bar
+  transform: translateX(0) !important;
+}
+.intro_wrapper {
+  // display: none;
+  z-index: 9997;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 1s $slow_end;
+}
+#intro_wrapper_black {
+  background: linear-gradient(45deg, #000 35%, transparent 65%);
+  background-size: 400% 400%;
+  background-position: 0 100%;
+}
+#intro_wrapper_img {
+  z-index: 9998;
+  background: $eyecatch;
+  opacity: 0;
+  transform: translateX(-100vw);
+}
+#intro_wrapper_txt {
+  z-index: 9999;
+  padding: 30px;
+  flex-flow: column nowrap;
+  justify-content: center;
+  background: $eyecatch;
+  -webkit-background: $eyecatch;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: rgba(0, 0, 0, 0);
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+  span {
+    white-space: nowrap;
+    font-size: 52px;
+    font-weight: bold;
+  }
+}
+//header
+.hamburger {
+  flex-flow: column nowrap;
+  align-items: flex-end;
+  width: 100px;
+  margin-left: auto;
+  padding: 15px 0 0 10px;
+  cursor: pointer;
+  @for $j from 3 through 1 {
+    span:nth-child(#{$j}) {
+        display: block;
+        height: 3px;
+        margin-bottom: 10px;
+        transform: translateX(100px);
+        background: #fff;
+        width: 100px - (25px * $j);
+        transition: .15s $slow_end .1s * $j;
+    }
+  }
+}
+
+header {
+  z-index: 999;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  right: 0;
+}
+
+nav {
+  background: linear-gradient(45deg, rgba(82, 235, 255, 0.8) 1%,rgba(82, 206, 255, 0.8), rgba(154, 103, 250, 0.8));
+  opacity: 0;
+  transition: 1s $slow_end;
+  transform: translateX(100vw);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  padding: 0 0 5vh 60px;
+  top: 0;
+  left: 0;
+  font-size: 32px;
+  li {
+    height: 8vh;
+    line-height: 8vh;
+    margin-bottom: 12vh;
+    transform: translateX(100vw);
+    text-shadow: 2px 2px 3px #555;
+    opacity: 0;
+    border-bottom: 1px solid #fff;
+  }
+  @for $k from 1 through 4 {
+    li:nth-child(#{$k}) {
+      transition: $slow_end .5s + .3s * $k;
+    }
+  }
+  li:hover {
+    a {
+      color: $lightaqua;
+      transition: .3s;
+    }
+  }
+ }
+
+.back {
+  width: 40px;
+  margin-left: auto;
+  padding: 10px 0;
+  height: 10vh;
+  span {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    transform: rotate(-45deg);
+    border-right: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+  }
+}
+
+#myMenu {
+  padding-top: 5vh;
+}
+

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,oCAAqC;EAGjC,uBAAwB;IACpB,SAAS,EAAE,eAAe;;EAKtB,0BAAW;IACP,KAAK,EAAE,KAAK;;EAKxB,SAAU;IACN,KAAK,EAAE,cAAc;IACrB,MAAM,EAAE,MAAM;IACd,UAAU,EAAE,gBAAgB;IAExB,sBAAG;MACC,SAAS,EAAE,cAAc;MACzB,KAAK,EAAE,cAAc",
+"sources": ["style_lg.scss"],
+"names": [],
+"file": "style_lg.css"
+}

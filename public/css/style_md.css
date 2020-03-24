@@ -1,0 +1,114 @@
+@media screen and (min-width: 768px) {
+  .section_title {
+    top: 20px; }
+
+  .pc_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap; }
+
+  .hamburger, .back {
+    display: none; }
+
+  .br_sp {
+    display: none; }
+
+  #myMenu {
+    display: flex;
+    margin-left: auto;
+    padding-top: 35px; }
+
+  nav {
+    background: transparent;
+    opacity: 1;
+    width: auto;
+    height: auto;
+    padding: 0;
+    transform: none;
+    left: auto;
+    right: 5%; }
+
+  #myMenu li {
+    transform: translateY(-150%);
+    opacity: 0;
+    border: none;
+    margin: 0;
+    font-size: 16px;
+    margin-right: 40px;
+    height: auto;
+    line-height: 24px; }
+
+  #myMenu li:nth-child(1) {
+    transition: cubic-bezier(0.6, 0.14, 0.4, 0.89) 0.65s; }
+
+  #myMenu li:nth-child(2) {
+    transition: cubic-bezier(0.6, 0.14, 0.4, 0.89) 0.8s; }
+
+  #myMenu li:nth-child(3) {
+    transition: cubic-bezier(0.6, 0.14, 0.4, 0.89) 0.95s; }
+
+  #myMenu li:nth-child(4) {
+    transition: cubic-bezier(0.6, 0.14, 0.4, 0.89) 1.1s; }
+
+  .nav_li_in_pc {
+    transform: translateY(0) !important;
+    opacity: 1 !important; }
+
+  #top {
+    padding-left: 15% !important; }
+
+  #about .pc_flex {
+    justify-content: center;
+    align-items: flex-start; }
+    #about .pc_flex .about_img {
+      width: 260px;
+      margin-bottom: 0 !important; }
+      #about .pc_flex .about_img img {
+        height: 240px !important;
+        margin: 0 auto 30px 0 !important; }
+    #about .pc_flex .about_txt {
+      width: 50%; }
+
+  #carousel {
+    width: 95% !important;
+    margin: 0 auto;
+    height: 460px !important;
+    padding-top: 50px; }
+    #carousel #worklist {
+      height: 410px; }
+      #carousel #worklist li {
+        min-width: 50%;
+        width: 50%; }
+        #carousel #worklist li h2 {
+          font-size: 18px; }
+
+  #btns {
+    justify-content: center; }
+    #btns #prev, #btns #next {
+      margin: 0 100px; }
+
+  #contact ul {
+    align-items: flex-end !important; }
+
+  .contact_link:nth-child(1) {
+    width: calc(45% + 20px) !important; }
+
+  .contact_link:nth-child(2) {
+    width: calc(45% + 40px) !important; }
+
+  .contact_link:nth-child(3) {
+    width: calc(45% + 60px) !important; }
+
+  .contact_link:nth-child(4) {
+    width: calc(45% + 80px) !important; }
+
+  .contact_link {
+    transform: skew(-10deg) translateX(calc(100% + 20px)) !important; }
+    .contact_link p {
+      font-size: 20px !important; }
+
+  .slidein {
+    transform: skew(-10deg) translateX(20px) !important; } }
+
+/*# sourceMappingURL=style_md.css.map */

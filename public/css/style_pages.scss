@@ -1,0 +1,218 @@
+$eyecatch: url(../img/moonlight.jpg) left top / cover;
+$eyecatch2: url(../img/moonlight2.jpg) left top / cover;
+$starbg: url(../img/hosizora.jpg) left top / cover;
+$starbg2: url(../img/hosizora2.jpg) left top / cover;
+$slow_end: cubic-bezier(0.6, 0.14, 0.4, 0.89);
+$gmail: rgba(214, 46, 46, .7);
+$twitter: rgba(29,161,242,.7);
+$facebook: rgba(60,90,153, .7);
+$github: rgba(56, 56, 56, .7);
+
+
+//top
+#top {
+    background: $eyecatch;
+    padding-left: 30px;
+    h1, span {
+      font-family: 'Marck Script', 'Courgette', 'Kaushan Script', cursive;
+      font-size: 36px;
+      text-shadow: 3px 3px 8px rgb(9, 32, 53);
+    }
+    h1 {
+      font-size: 60px;
+      margin-bottom: 30px;
+    } 
+    .scroll {
+      font-size: 80px;
+      position: absolute;
+      right: 10%;
+      bottom: 10%;
+    }
+}
+
+//about
+#about {
+  background: $starbg;
+    .pc_flex {
+      padding: 0 25px;
+      .about_img {
+        margin-bottom: 25px;
+        img {
+          width: 200px;
+          height: 30vh;
+          margin: 0 auto 30px;
+          display: block;
+        }
+        h1 {
+          font-size: 20px;
+        }
+      }
+      .about_txt {
+        p {
+          letter-spacing: 0.1em;
+        }
+      }
+    }
+}
+
+//works 
+#works {
+  background: $starbg2;
+}
+#carousel {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+#btns {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+}
+#prev, #next {
+  margin: 0 40px;
+  line-height: 100px;
+  font-size: 50px;
+  .fas {
+    color: #fffc;
+    cursor: pointer;
+  }
+}
+#counter {
+  font-size: 20px;
+}
+#worklist {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  li {
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+    transition: 1s $slow_end;
+    h2 {
+      text-align: center;
+      font-size: 20px;
+      line-height: 20px;
+      padding-bottom: 30px;
+      }
+      .work_thumbnail {
+        background: url(../img/chuo-futsal.png) no-repeat center / 100%;
+        position: relative;
+        width: 80%;
+        margin: 0 auto;
+        height: calc(100% - 150px);
+        transition: .3s  $slow_end;
+        a {
+          padding: 80px 40px;
+          color: transparent;
+          transition: .3s  $slow_end;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0);
+          text-align: center;
+          line-height: 2em;
+        }
+      }
+      .work_thumbnail:hover {
+        background-size: 110%;
+      }
+      .work_thumbnail:hover a {
+        background-color: rgba(0, 0, 0, 0.6);
+        color: white;
+      }
+      .minesweeper {
+        background-image: url(../img/minesweeper.png);
+      }
+      .isara {
+        background-image: url(../img/isara.png);
+      }
+      .imgcorpo {
+        background-image: url(../img/imaginarycorporate.png);
+      }
+  }
+}
+
+//contact 
+#contact {
+  background: $eyecatch2;
+  ul {
+    height: 60vh;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+  }
+}
+.contact_link {
+  padding: 15px 40px;
+  transform: skew(-10deg) translateX(calc(-100% - 20px));
+  background: #fff4;
+  position: relative;
+  overflow: hidden;
+  a {
+    justify-content: flex-start;
+    .fab, .far {
+      transition: .4s;
+      margin-right: 30px;
+      font-size: 60px;
+    }
+  }
+  p {
+    transition: .4s;
+    font-size: 18px;
+  }
+}
+@for $l from 1 through 4 {
+  .contact_link:nth-child(#{$l}) {
+    transition: .4s .15s * $l;
+    width: calc(100% + 10px - #{20px * $l});
+  }
+}
+.gmail {
+  background: linear-gradient(45deg, #fff4 25%, $gmail);
+}
+.twitter {
+  background: linear-gradient(45deg, #fff4 25%, $twitter); 
+}
+.facebook {
+  background: linear-gradient(45deg, #fff4 25%, $facebook);
+}
+.github {
+  background: linear-gradient(45deg, #fff4 25%, $github);
+}
+.gmail:hover i, .gmail:hover p {
+  color: $gmail;
+}
+.twitter:hover i, .twitter:hover p {
+  color: $twitter;
+}
+.facebook:hover i, .facebook:hover p {
+  color: $facebook;
+}
+.github:hover i, .github:hover p {
+  color: $github;
+}
+.contact_link:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  left: -60px;
+  transition: .4s;
+  width: 115%;
+  background: linear-gradient(45deg, #fffa, rgba(0, 0, 0, 0));
+  transform: skew(-10deg) translateX(-100%);
+  z-index: -1;
+}
+.contact_link:hover i, .contact_link:hover p {
+  text-shadow: 3px 3px 5px #fff;
+}
+.contact_link:hover:after {
+  transform: skew(-10deg) translateX(20px);
+}
+
+

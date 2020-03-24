@@ -1,0 +1,30 @@
+@media screen and (min-width: 992px) {
+
+    //animation
+    #intro_wrapper_txt span {
+        font-size: 70px !important;
+    }
+    //about {
+    #about {
+        .pc_flex {
+            .about_txt {
+                width: 350px;
+            }
+        }
+    }
+    //works
+    #carousel {
+        width: 80% !important;
+        margin: 0 auto;
+        min-height: 420px !important;
+        #worklist {
+            li {
+                min-width: calc(100% / 3);
+                width: calc(100% / 3);
+            }
+        }
+    }
+
+
+    
+}

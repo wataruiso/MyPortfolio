@@ -1,0 +1,415 @@
+@media (min-width: 768px) {
+  .break {
+    display: none; }
+
+  .afterbreak {
+    display: block; }
+
+  h1 {
+    font-size: 2.4rem !important; }
+
+  h2 {
+    font-size: 1.6rem !important; }
+
+  header {
+    height: 7.6rem;
+    padding: 1.6rem 1rem; }
+    header .header__title {
+      padding: 0; }
+      header .header__title p {
+        font-size: 1.2rem;
+        padding-top: 2rem; }
+      header .header__title img {
+        width: 13rem;
+        margin-right: .4rem; }
+
+  .mainsc {
+    background-image: url(../img/main.jpg);
+    background-size: cover; }
+    .mainsc .mainsc__paragraph {
+      padding: 10rem 0; }
+      .mainsc .mainsc__paragraph h1 {
+        line-height: 2em; }
+      .mainsc .mainsc__paragraph img {
+        padding: 0.8rem 3rem 3.6rem;
+        width: 38rem;
+        height: 16rem; }
+
+  .mainsc__desc {
+    padding: 3rem 8rem 4rem; }
+    .mainsc__desc p {
+      letter-spacing: .2em; }
+    .mainsc__desc a div {
+      margin: 1.5rem auto 0;
+      padding: 1.5rem;
+      height: 8rem; }
+      .mainsc__desc a div h1 {
+        color: #fff;
+        font-size: 1.8rem !important;
+        letter-spacing: .1em;
+        width: 90%;
+        margin: 0; }
+    .mainsc__desc h2:not(:first-child) {
+      font-size: 1.8rem !important;
+      margin: 2.8rem 0; }
+
+  .box__left {
+    width: 5rem;
+    height: 5rem; }
+
+  .box__right {
+    width: 5rem;
+    height: 5rem; }
+
+  .mainsec__reason {
+    padding: 4rem 1.8rem 1rem; }
+    .mainsec__reason .mainsec__reason--title {
+      margin-bottom: 3.5rem; }
+      .mainsec__reason .mainsec__reason--title h1 {
+        padding: 2.6rem 0 1.7rem; }
+    .mainsec__reason p {
+      font-size: 1.6rem;
+      letter-spacing: .1em; }
+
+  .road {
+    height: 24rem;
+    background-size: 120rem; }
+    .road p {
+      font-size: 1.6rem;
+      letter-spacing: .1em; }
+    .road div {
+      width: 8rem;
+      height: 8rem;
+      line-height: 8rem;
+      font-size: 1.4rem;
+      top: 14rem; }
+
+  .mainsec__about {
+    padding: 7rem 1.8rem; }
+    .mainsec__about .mainsec__about--title {
+      margin-bottom: 3.5rem; }
+      .mainsec__about .mainsec__about--title h1 {
+        line-height: 1.5;
+        padding: 5rem 0 3rem; }
+    .mainsec__about .skills {
+      padding: 0 3rem 2rem; }
+      .mainsec__about .skills h2 {
+        padding-top: 2rem; }
+      .mainsec__about .skills ul li {
+        padding: 1.1rem; }
+        .mainsec__about .skills ul li img {
+          width: auto;
+          height: auto; }
+        .mainsec__about .skills ul li p {
+          font-size: 1.2rem; }
+      .mainsec__about .skills ul li:nth-child(3) img {
+        width: auto; }
+      .mainsec__about .skills ul li:last-child img {
+        width: auto; }
+
+  .mainsec__caution {
+    padding: 6rem 3rem 5rem;
+    background-image: url(../img/aboutsecondbg.jpg); }
+    .mainsec__caution p {
+      font-size: 1.6rem;
+      letter-spacing: .1em; }
+    .mainsec__caution ul {
+      width: 40%;
+      margin: 3rem auto 0; }
+      .mainsec__caution ul li {
+        padding: 3rem; }
+        .mainsec__caution ul li h3 {
+          font-size: 1.4rem; }
+        .mainsec__caution ul li p {
+          padding-top: 2rem;
+          margin: 0; }
+        .mainsec__caution ul li p:last-child {
+          font-size: 1.4rem; }
+      .mainsec__caution ul li + li {
+        margin-top: 2rem; }
+
+  .mainsec__caution--blue {
+    padding: 4rem; }
+    .mainsec__caution--blue p {
+      font-size: 1.6rem; }
+
+  .mainsec__study {
+    padding: 2rem 0 5rem; }
+    .mainsec__study p {
+      font-size: 1.6rem; }
+    .mainsec__study ul {
+      justify-content: center;
+      margin: 3.5rem 0; }
+      .mainsec__study ul li {
+        margin: 2rem;
+        max-width: 18rem;
+        max-height: 18rem; }
+    .mainsec__study span {
+      font-size: 1.4rem; }
+
+  .mainsec__merit .mainsec__merit--title {
+    width: 85%;
+    max-width: 86rem;
+    margin: 0 auto; }
+    .mainsec__merit .mainsec__merit--title h2 {
+      font-size: 1.6rem !important;
+      padding: 1.5rem 0 1rem; }
+    .mainsec__merit .mainsec__merit--title h1 {
+      padding-bottom: 1rem; }
+  .mainsec__merit ul li img {
+    width: auto;
+    height: auto; }
+  .mainsec__merit ul li div {
+    padding: 0 7rem; }
+    .mainsec__merit ul li div h5 {
+      font-size: 1.6rem; }
+    .mainsec__merit ul li div p {
+      font-size: 1.4rem; }
+  .mainsec__merit .support {
+    margin: 7rem 6rem 4rem;
+    padding: 4rem 2rem 5rem; }
+    .mainsec__merit .support h2 {
+      font-size: 1.6rem !important; }
+    .mainsec__merit .support p {
+      font-size: 1.4rem;
+      letter-spacing: .1em;
+      padding: 0; }
+  .mainsec__merit p {
+    padding: 0 4rem; }
+
+  .mainsec__member {
+    background-image: url(../img/teacherbg.jpg);
+    padding: 6rem 5rem 2rem; }
+    .mainsec__member p {
+      font-size: 1.4rem; }
+    .mainsec__member ul li img {
+      width: 20rem;
+      height: 20rem; }
+    .mainsec__member ul li .member {
+      padding: 0 3.5rem 4rem;
+      max-width: 77.5rem; }
+
+  .really {
+    padding: 3rem 2rem 4rem; }
+    .really span {
+      font-size: 2rem;
+      width: 8rem;
+      height: 8rem;
+      line-height: 8rem; }
+    .really .really__title {
+      max-width: 85.5rem;
+      margin: 0 auto; }
+      .really .really__title h4 {
+        font-size: 1.8rem;
+        line-height: 2; }
+
+  .really:after {
+    width: 5.5rem;
+    height: 5.5rem; }
+
+  .possible {
+    padding-bottom: 2.5rem; }
+    .possible h1 {
+      padding-top: 5rem; }
+    .possible h5 {
+      font-size: 1.4rem; }
+    .possible ul li .imgwrapper {
+      margin: 0 2rem; }
+    .possible ul li div {
+      margin: 1.5rem; }
+
+  .contents {
+    padding: 6rem 1rem 7rem;
+    background-image: url(../img/classbg.jpg); }
+    .contents p {
+      font-size: 1.4rem;
+      margin-bottom: 4rem; }
+    .contents .blue-box {
+      width: 62rem;
+      margin: 0 auto; }
+      .contents .blue-box ul li {
+        font-size: 1.4rem !important; }
+    .contents .blue-box + .blue-box {
+      margin-top: 1.5rem; }
+
+  .norisk {
+    padding: 4rem 0; }
+    .norisk h3 {
+      font-size: 1.6rem; }
+
+  .lecture .flowpc {
+    display: block; }
+    .lecture .flowpc img {
+      width: 90%;
+      max-width: 100rem;
+      margin: 0 auto 3rem; }
+    .lecture .flowpc ul {
+      padding: 0 6rem; }
+      .lecture .flowpc ul li {
+        list-style-type: none; }
+        .lecture .flowpc ul li .item {
+          border-radius: .8rem;
+          padding: 3rem;
+          background: #fef5e0;
+          display: flex;
+          align-items: center; }
+          .lecture .flowpc ul li .item .flowleft {
+            flex-basis: 20rem;
+            padding: 0;
+            display: block; }
+            .lecture .flowpc ul li .item .flowleft img {
+              width: auto;
+              height: auto; }
+            .lecture .flowpc ul li .item .flowleft h3 {
+              font-weight: bold;
+              letter-spacing: .1em;
+              line-height: 1.5;
+              padding: 1.5rem 0; }
+          .lecture .flowpc ul li .item .flowright {
+            flex-grow: 1;
+            flex-basis: 60%;
+            display: block;
+            padding: 0; }
+            .lecture .flowpc ul li .item .flowright p {
+              font-size: 1.4rem;
+              font-weight: bold;
+              letter-spacing: .1em;
+              text-align: left;
+              margin: 0; }
+            .lecture .flowpc ul li .item .flowright span {
+              text-align: left;
+              font-size: 1.2rem;
+              display: block;
+              padding-top: 2rem; }
+          .lecture .flowpc ul li .item .flowright:nth-child(2) span {
+            padding-bottom: 2rem; }
+      .lecture .flowpc ul li:nth-child(even):before {
+        content: '';
+        background-image: url(../img/flowline1.png);
+        background-size: contain;
+        display: inline-block;
+        width: 70%;
+        padding-bottom: 6%; }
+      .lecture .flowpc ul li:nth-child(even):after {
+        content: '';
+        background-image: url(../img/flowline2.png);
+        background-size: contain;
+        display: inline-block;
+        width: 70%;
+        padding-bottom: 6%; }
+  .lecture #accordion {
+    display: none; }
+
+  .why {
+    background-image: url(../img/bangkokbg.jpg);
+    padding: 5rem 6rem 4rem; }
+    .why h1 {
+      text-align: left; }
+    .why ul li {
+      font-size: 1.4rem; }
+    .why h4 {
+      font-size: 1.6rem; }
+
+  .present {
+    padding: 6rem 4rem 4rem; }
+    .present h1 {
+      margin-bottom: 5rem; }
+    .present p {
+      font-size: 1.4rem; }
+      .present p span {
+        font-size: 1.4rem; }
+    .present .zero {
+      width: 38rem;
+      height: 8rem;
+      top: 3.5rem; }
+      .present .zero h2 {
+        font-size: 2.4rem !important;
+        margin: 0; }
+    .present ul li {
+      margin: 2rem auto;
+      width: 25rem;
+      height: 25rem;
+      line-height: 25rem;
+      border-radius: 50%;
+      background: #fff;
+      display: block;
+      padding: 4rem 0.5rem; }
+      .present ul li div {
+        border-radius: 0;
+        width: 10rem !important;
+        margin: 2rem auto;
+        color: #ebb94d;
+        font-size: 2.4rem;
+        font-weight: normal;
+        line-height: 1;
+        width: auto;
+        height: auto; }
+      .present ul li p {
+        display: none; }
+      .present ul li h6 {
+        display: block;
+        color: black;
+        font-size: 1.4rem;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+        line-height: 1.6;
+        margin: 0;
+        text-align: center;
+        width: 23rem; }
+
+  .notvolunteer {
+    background-image: url(../img/specialdetail.jpg);
+    padding: 6rem 5rem; }
+    .notvolunteer p {
+      font-size: 1.6rem; }
+
+  .message {
+    padding: 6.5rem 3rem 10rem; }
+    .message h1 {
+      margin-bottom: 4rem; }
+    .message h5 {
+      margin-bottom: 6rem;
+      font-size: 1.6rem; }
+    .message div .message__txt {
+      padding-top: 4rem; }
+
+  #form {
+    padding: 6rem 1.5rem; }
+    #form span {
+      font-size: 1.4rem; }
+    #form form input[type="text"], #form form input[type="email"], #form form textarea, #form form div {
+      width: 70%; }
+
+  .questions {
+    padding: 6rem; }
+    .questions h1 {
+      margin-bottom: 4rem; }
+    .questions #accordion2 .question .question__title h5 {
+      padding: 1.8rem;
+      font-size: 1.6rem; }
+    .questions #accordion2 .question .question__title .gbox {
+      margin-right: 2.5rem;
+      border-right: .45rem solid #e5e5e5;
+      border-bottom: .45rem solid #e5e5e5;
+      width: 1.2rem;
+      height: 1.2rem; }
+    .questions #accordion2 .question .collapse, .questions #accordion2 .question .collapsing {
+      padding: 2rem 2rem 2.5rem; }
+      .questions #accordion2 .question .collapse p, .questions #accordion2 .question .collapsing p {
+        font-size: 1.4rem; }
+
+  footer {
+    padding: 3.5rem 0 2.5rem; }
+    footer #scrollTop {
+      padding: 1.5rem 1.3rem 1rem;
+      width: 7rem;
+      height: 7rem;
+      right: 5rem;
+      bottom: 9rem; }
+      footer #scrollTop div {
+        border-top: .5rem solid #333;
+        border-left: .5rem solid #333;
+        width: 1.8rem;
+        height: 1.8rem; } }
+
+/*# sourceMappingURL=mediaquery.css.map */
