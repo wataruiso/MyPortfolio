@@ -1,6 +1,8 @@
 $eyecatch: url(../img/moonlight.jpg) left top / cover;
 $slow_end: cubic-bezier(0.6, 0.14, 0.4, 0.89);
-$lightaqua: rgb(128, 255, 255);
+$lightaqua: rgb(163, 255, 255);
+$lightblue: rgba(100, 153, 253, 0.5);
+
 
 * {
   font-family: 'Kaushan Script', 'Courgette', 'Marck Script','Kosugi','M PLUS Rounded 1c',cursive;
@@ -64,12 +66,15 @@ $lightaqua: rgb(128, 255, 255);
   transition: .4s $slow_end;
   opacity: 0;
 }
+.fadein.in {
+  opacity: 1;
+}
 .slidein {
   transform: skew(-10deg) translateX(-20px) !important;
 }
 .show {
-  transform: translateX(0);
-  opacity: 1;
+  transform: translate(0) !important;
+  opacity: 1 !important;
 }
 .flash {
   animation: fadein .8s infinite alternate;
@@ -218,5 +223,44 @@ nav {
 
 #myMenu {
   padding-top: 5vh;
+}
+
+.link_to_service_site {
+  background: #aaa7;
+  color: #fff;
+  text-align: center;
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 14px;
+  line-height: 1.8;
+  position: absolute;
+  bottom: calc(54px - 100vh);
+  transform: translateY(54px);
+  opacity: 0;
+  transition: .4s;
+  overflow: hidden;
+}
+
+.link_to_service_site:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: $lightblue;
+  transform: translateX(-100%);
+  z-index: -1;
+  transition: .4s;
+}
+.link_to_service_site .fas {
+  transition: .4s;
+}
+.link_to_service_site:hover, .link_to_service_site:hover .fas {
+  color: rgb(5, 64, 172);
+}
+.link_to_service_site:hover:before {
+  transform: translateX(0);
 }
 

@@ -55,6 +55,15 @@
     transform: translateY(0) !important;
     opacity: 1 !important; }
 
+  .link_to_service_site {
+    width: 300px;
+    bottom: -100vh;
+    right: -20px;
+    transform: translateY(54px) skew(-12deg); }
+
+  .link_to_service_site.show {
+    transform: translate(0) skew(-12deg) !important; }
+
   #top {
     padding-left: 15% !important; }
 
@@ -69,6 +78,8 @@
         margin: 0 auto 30px 0 !important; }
     #about .pc_flex .about_txt {
       width: 50%; }
+      #about .pc_flex .about_txt p {
+        line-height: 2em; }
 
   #carousel {
     width: 95% !important;

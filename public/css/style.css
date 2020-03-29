@@ -58,12 +58,15 @@
   transition: 0.4s cubic-bezier(0.6, 0.14, 0.4, 0.89);
   opacity: 0; }
 
+.fadein.in {
+  opacity: 1; }
+
 .slidein {
   transform: skew(-10deg) translateX(-20px) !important; }
 
 .show {
-  transform: translateX(0);
-  opacity: 1; }
+  transform: translate(0) !important;
+  opacity: 1 !important; }
 
 .flash {
   animation: fadein .8s infinite alternate; }
@@ -267,7 +270,7 @@ nav {
   nav li:nth-child(4) {
     transition: cubic-bezier(0.6, 0.14, 0.4, 0.89) 1.7s; }
   nav li:hover a {
-    color: #80ffff;
+    color: #a3ffff;
     transition: .3s; }
 
 .back {
@@ -285,5 +288,42 @@ nav {
 
 #myMenu {
   padding-top: 5vh; }
+
+.link_to_service_site {
+  background: #aaa7;
+  color: #fff;
+  text-align: center;
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 14px;
+  line-height: 1.8;
+  position: absolute;
+  bottom: calc(54px - 100vh);
+  transform: translateY(54px);
+  opacity: 0;
+  transition: .4s;
+  overflow: hidden; }
+
+.link_to_service_site:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(100, 153, 253, 0.5);
+  transform: translateX(-100%);
+  z-index: -1;
+  transition: .4s; }
+
+.link_to_service_site .fas {
+  transition: .4s; }
+
+.link_to_service_site:hover, .link_to_service_site:hover .fas {
+  color: #0540ac; }
+
+.link_to_service_site:hover:before {
+  transform: translateX(0); }
 
 /*# sourceMappingURL=style.css.map */
