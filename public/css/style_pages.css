@@ -29,6 +29,8 @@
         font-size: 20px; }
     #about .pc_flex .about_txt p {
       letter-spacing: 0.1em; }
+  #about .link_to_service {
+    font-size: 14px; }
 
 #works {
   background: url(../img/hosizora2.jpg) left top/cover; }

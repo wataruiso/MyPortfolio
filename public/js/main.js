@@ -6,7 +6,6 @@ const nav = $('nav');
 const fadein = $('.fadein');
 const nav_li = $('nav li');
 const scroll_arrow = $('.scroll');
-const link_to_service_site = $('.link_to_service_site');
 const speed = 500;
 let back = $('.back');
 let next = $("#next");
@@ -96,11 +95,9 @@ $(document).ready(function() {
         easing: 'easeOutCubic',
         onLeave: function() {
             if(nav.hasClass('show')) back.click();
-            link_to_service_site.removeClass('show');
             animationViaPage(0);
         },
-        afterLoad: function(anchorLink) {
-            if(anchorLink !== 'firstPage') link_to_service_site.addClass('show');
+        afterLoad: function() {
             animationViaPage(1);
         },
         afterRender: function() {
